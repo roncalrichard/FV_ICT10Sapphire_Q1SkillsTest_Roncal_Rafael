@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    <title>ICT 10 Receipt Generator</title>
+</head>
+<body>
+    <h2>Coffee Shop Menu</h2>
+    
+    <!-- menu items ykyk-->
+    <input type="checkbox" id="item1" value="99">
+    <label for="item1">Cappuccino - ₱99</label><br>
+
+    <input type="checkbox" id="item2" value="129">
+    <label for="item2">Iced Mocha Latte - ₱129</label><br>
+
+    <input type="checkbox" id="item3" value="159">
+    <label for="item3">Affogato - ₱159</label><br><br>
+
+    <!-- Checkout! -->
+    <button type="submit" py-click="create_order">Generate Receipt</button>
+    
+    <!-- Output -->
+    <div id="show"></div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
